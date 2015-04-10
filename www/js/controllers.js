@@ -469,13 +469,12 @@ angular.module('starter.controllers', ['configuration', 'filters'])
 	}
 ])
 
-.controller('AboutCtrl', ['$scope', '$ionicScrollDelegate', 'PRIV_POLICY_TEXT','SHOW_BRANDING','BRAND_ABOUT_TEXT',
-	function($scope, $ionicScrollDelegate, PRIV_POLICY_TEXT,SHOW_BRANDING,BRAND_ABOUT_TEXT) {
+.controller('AboutCtrl', ['$scope', '$ionicScrollDelegate', 'SHOW_BRANDING','BRAND_ABOUT_TEXT',
+	function($scope, $ionicScrollDelegate,SHOW_BRANDING,BRAND_ABOUT_TEXT) {
         $scope.data = {
             showBranding: SHOW_BRANDING,
             hideText: true,
-            brandAboutText: BRAND_ABOUT_TEXT,
-            privText: PRIV_POLICY_TEXT
+            brandAboutText: BRAND_ABOUT_TEXT
         };
 		$scope.toggleText = function() {
 			// resize the content since the Privacy Policy text is too big 

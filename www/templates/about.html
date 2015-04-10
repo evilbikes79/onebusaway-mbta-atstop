@@ -20,9 +20,41 @@
 
         <button class="button button-full" ng-click="toggleText()">Privacy Policy</button>
 
-        <div class="card" ng-hide="data.hideText">
-            <p class="longtext" ng-repeat="p in data.privText"><span ng-bind-html="p"></span>
-            </p>
+        <div class="card" id="privacy" ng-hide="data.hideText">
+
+            <h1>OneBusAway Privacy Policy</h1>
+            <p>We value your privacy, so we want to be clear about how your personal information is used with OneBusAway.</p>
+
+            <ul>
+                <li>Access Statistics</li>
+                <li>Session information</li>
+                <li>Default Search Location</li>
+                <li>Bookmarks</li>
+                <li>Most-recently accessed stop</li>
+            </ul>
+
+            <h2>Access Statistics</h2>
+
+            <p>We gather information on how many different people use OneBusAway, how often they use it and in what part of the region. This shows how our tools and our transit systems are used. We only store non-personally-identifiable information long-term.  However, to gather this information accurately, we do need to store a small amount of personally identifying information for less than 24 hours.  We don't collect any other data.</p>
+
+            <p>When you use any of the OneBusAway tools, your interactions with the site produce a lot of personally sensitive information.  Requesting information for a particular bus stop, for example, provides a good indication of where you are at the time of the request.  We securely and temporarily log this interaction data for no more than 24 hours before it is permanently deleted.  In addition to specific interaction logs, we also keep a count of the total number of unique users of our tools over the course of the week.</p>
+
+            <h2>Session information</h2>
+
+            <p>During a single use of the program, the system stores a variety of information necessary for its functioning.  For example, we keep track of your last requested stop so that we can quickly present it again at your request. This information is deleted as soon as the session ends.</p>
+
+            <h2>Default Search Location</h2>
+
+            <p>When you use the web, phone, and SMS interfaces, we associate a default search location with your account.  The default search location is typically no more specific than a zip code. We use the default search location to return search results appropriate to your area. For example, when searching for "Route 10," your default search location helps us decide if we should tell you about the Route 10 in Seattle, or the Route 10 in Tacoma.</p>
+
+            <h2>Bookmarks</h2>
+
+            <p>In the phone and SMS interface, we allow users to bookmark their frequently accessed stops.  We store this information so that users don't have to remember the stop numbers for their favorite stops, but users should also be aware that stop bookmarks provide hints to the places they frequently visit.</p>
+
+            <h2>Most-recently accessed stop</h2>
+
+            <p>We store the most-recently accessed stop for each user so that the user can quickly access that stop again.</p>
+
         </div>
 
     </ion-content>

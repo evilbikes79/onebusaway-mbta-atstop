@@ -1,6 +1,16 @@
-/* #about_body,.scroll-content{background-image:url(/img/oba_logo.png);background-repeat:no-repeat;background-attachment:fixed;background-position:center} */
 #logo
 {
 	width:100%;
 	text-align: center;
+}
+
+#privacy
+{
+	padding: 20px 15px ;
+}
+
+#privacy ul
+{
+	margin-left: 45px;
+	list-style-type: disc;
 }
