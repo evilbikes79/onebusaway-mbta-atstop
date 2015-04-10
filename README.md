@@ -1,12 +1,12 @@
 # At Stop #
 
-A hybrid mobile app that provides information about when the next bus will arrive at your stop. The app uses free [MTA Bus Time Developer API](http://bustime.mta.info/wiki/Developers/Index)'s to get the real-time location of the buses serving a particular stop. The app is built on top of [Ionic Framework](http://ionicframework.com/), [AngularJS](https://angularjs.org/) and [PhoneGap](http://phonegap.com/).
+A hybrid mobile app that provides information about when the next bus will arrive at your stop. The app uses free [MBTA Real Time Developer API](http://realtime.mbta.com/portal)'s to get the real-time location of the buses serving a particular stop. The app is built on top of [Ionic Framework](http://ionicframework.com/), [AngularJS](https://angularjs.org/) and [PhoneGap](http://phonegap.com/).
 
 ### Setting up the project ###
 * First, clone the repository. 
-* Second, you'll need to configure the project to connect and authenticate with MTA Bus Time.
+* Second, you'll need to configure the project to connect and authenticate with the MBTA Real Time feed.
   * Copy `www/js/config.tmpl.js` to `config.js` (in the same folder)
-  * Get a MTA Bus Time Developer API key. Go [here](http://spreadsheets.google.com/viewform?hl=en&formkey=dG9kcGIxRFpSS0NhQWM4UjA0V0VkNGc6MQ#gid=0) to request one. You will receive the key within half an hour.
+  * Get an MBTA Developer API key at [http://realtime.mbta.com/Portal/Account/Register](http://realtime.mbta.com/Portal/Account/Register) to request one.
   * Insert your key into the `API_KEY` field of `config.js`.
   * Set the API end point via the `API_END_POINT` constant in the same file (e.g. `http://app.prod.obanyc.com/`)
 
