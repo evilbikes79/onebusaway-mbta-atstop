@@ -1,20 +1,22 @@
 <ion-view view-title="About This App">
     <ion-content has-bouncing="true">
         <app-header ng-show="data.showBranding"></app-header>
-        <div class="card">
+        <div class="card" id="about_body">
 
             <p ng-show="data.showBranding" ng-repeat="p in data.brandAboutText">
                 <span ng-bind-html="p|hrefToJS"></span>
             </p>
 
-            <p>This app was created by the MTA Bus Time Team, using
+            <p>This app was adapted by the <a href="http://onebusaway.org">OneBusAway</a> team using
                 PhoneGap,
                 Ionic,
-                AngularJS ,
+                AngularJS,
                 Leaflet, and
-                the MTA Bus Time APIs.
+                the MBTA Real Time APIs.
             </p>
         </div>
+
+        <div id="logo"><img src="/img/oba_logo.png"/></div>
 
         <button class="button button-full" ng-click="toggleText()">Privacy Policy</button>
 
