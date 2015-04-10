@@ -9,6 +9,7 @@ var sh = require('shelljs');
 var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
+minifyCSS = require('gulp-minify-css');
 //var optipng = require('gulp-optipng');
 //var pngquant = require('imagemin-pngquant');
 
@@ -16,7 +17,7 @@ var paths = {
   sass: ['./scss/**/*.scss']
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass','minify-css']);
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
@@ -28,6 +29,11 @@ gulp.task('sass', function(done) {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./www/css/'))
     .on('end', done);
+});
+
+gulp.task('minify-css', function() {
+  return gulp.src('./www/css/oba_mbta.css')
+    .pipe(gulp.dest('./www/css/min'))
 });
 
 gulp.task('watch', function() {
